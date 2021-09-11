@@ -1,119 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
+<div class="container">
+    <div class="static-content">
+        <div class="owner_details">
+            <img src="https://thumbs.dreamstime.com/z/wood-alphabet-letter-word-owner-artificial-green-grass-background-211582887.jpg" />
+            <span class="owner-name">{{ ownerName }},<br></span>
+            <p class="other-details">
+                (Managing Partner)<br> H.No: 12-13-380,<br> Street No: 2,<br> Sandeepam School Lane,<br> Tarnaka, Secunderabad – 500017
+            </p>
+        </div>
+        <div class="owner-email">
+            <img src="https://icon-library.com/images/small-email-icon/small-email-icon-29.jpg" style="width:100px;height:100px;" /> <br> {{ emailOne }}
+            <br> {{ emailTwo }}
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+    <div class="contact1">
+        <div class="container-contact1">
+            <div class="contact1-pic js-tilt" data-tilt>
+                <img src="https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_1280.jpg" alt="IMG">
+            </div>
+            <form class="contact1-form validate-form">
+                <span class="contact1-form-title">
+                    Get in touch with us
+                </span>
+                <div class="wrap-input1 validate-input" data-validate="Name is
+                    required">
+                    <input class="input1" type="text" name="name" placeholder="Name">
+                    <span class="shadow-input1"></span>
+                </div>
+                <div class="wrap-input1 validate-input" data-validate="Valid email
+                    is required: ex@abc.xyz">
+                    <input class="input1" type="text" name="email" placeholder="Email">
+                    <span class="shadow-input1"></span>
+                </div>
+                <div class="wrap-input1 validate-input" data-validate="Subject is
+                    required">
+                    <input class="input1" type="text" name="subject" placeholder="Subject">
+                    <span class="shadow-input1"></span>
+                </div>
+                <div class="wrap-input1 validate-input" data-validate="Message is
+                    required">
+                    <textarea class="input1" name="message" placeholder="Message"></textarea>
+                    <span class="shadow-input1"></span>
+                </div>
+                <div class="container-contact1-form-btn">
+                    <button class="contact1-form-btn">
+                        <span>
+                            Send Email
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="https://www.w3schools.com/bootstrap/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="https://www.w3schools.com/bootstrap/birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="https://www.w3schools.com/bootstrap/birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
-
-</body>
-</html>

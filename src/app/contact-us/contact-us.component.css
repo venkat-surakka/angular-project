@@ -1,0 +1,69 @@
+body {
+    font-style: italic;
+}
+
+.contact1 {
+    background-color: lightblue;
+}
+
+.contact1-form-title {
+    padding: 10px;
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.owner-name {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.static-content {
+    background-color: teal;
+}
+
+.container {
+    width: 65vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container div {
+    padding: 10px;
+}
+
+.content {
+    text-align: justify;
+    font-style: oblique;
+}
+
+.header {
+    grid-column: 1 / 4;
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    font-size: x-small;
+    background-color: red;
+}
+
+.content-large {
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+img {
+    width: 100%;
+    height: 55%;
+}
