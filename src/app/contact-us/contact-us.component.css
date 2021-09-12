@@ -6,6 +6,10 @@ body {
     background-color: lightblue;
 }
 
+.input1 {
+    width: 400px;
+}
+
 .contact1-form-title {
     padding: 10px;
     color: black;
