@@ -1,10 +1,18 @@
-<div class="container-fluid">
+<!--div class="container-fluid">
     <nav class="nav">
         <a class="nav-link" routerLink="/home" routerLinkActive="activebutton">Home</a>
         <a class="nav-link" routerLink="/oxygen" routerLinkActive="activebutton">Oxygen</a>
         <a class="nav-link" routerLink="/nebuliser" routerLinkActive="activebutton">Nebulisers</a>
         <a class="nav-link" routerLink="/contact-us" routerLinkActive="activebutton">Contact Us</a>
     </nav>
-</div>
+</div-->
+
+<ul routerLinkActive="active">
+    <li><a routerLink="/home" routerLinkActive="activebutton">Home</a></li>
+    <li><a routerLink="/oxygen" routerLinkActive="activebutton">Oxygen</a></li>
+    <li><a routerLink="/nebuliser" routerLinkActive="activebutton">Nebulisers</a></li>
+    <li><a routerLink="/contact-us" routerLinkActive="activebutton">Contact Us</a></li>
+</ul>
+
 
 <router-outlet></router-outlet>
