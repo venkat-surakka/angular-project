@@ -9,7 +9,7 @@ pipeline {
 
     stage('launch the app') {
       steps {
-        sh 'npm run start'
+        bat 'npm run start'
       }
     }
 
