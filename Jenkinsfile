@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        sh 'bat "npm install"'
+        bat 'npm install'
       }
     }
 
