@@ -9,7 +9,7 @@ pipeline {
 
     stage('launch the app') {
       steps {
-        bat 'npm install ng build --prod --aot'
+        bat 'ng serve'
       }
     }
 
