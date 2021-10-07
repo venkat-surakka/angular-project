@@ -9,7 +9,7 @@ pipeline {
 
     stage('launch the app') {
       steps {
-        bat 'ng serve'
+        bat 'npm run start'
       }
     }
 
