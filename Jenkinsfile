@@ -1,15 +1,27 @@
 pipeline {
   agent any
   stages {
-    stage('compile') {
+    stage('stop iis') {
+      steps {
+        bat 'net stop W3svc'
+      }
+    }
+
+    stage('build app') {
       steps {
         bat 'npm install'
       }
     }
 
-    stage('launch the app') {
+    stage('publish') {
       steps {
-        bat 'npm run start'
+        bat 'npm run prod'
+      }
+    }
+
+    stage('publish') {
+      steps {
+        bat 'net start W3svc'
       }
     }
 
