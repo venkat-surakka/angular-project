@@ -15,7 +15,7 @@ pipeline {
 
     stage('publish') {
       steps {
-        bat 'npm run prod'
+        bat 'npm run build'
       }
     }
 

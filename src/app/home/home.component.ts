@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   companySubtitle: string; 
 
   constructor() {
-    this.companyTitle = "Alstom Healthcare Systems";
+    this.companyTitle = "Alstom Healthcare Systems -- Test";
     this.companySubtitle = "Channel partner for Philips Respitronics";
    }
 
