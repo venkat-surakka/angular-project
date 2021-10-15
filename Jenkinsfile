@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('publish') {
+    stage('start iis') {
       steps {
         bat 'net start W3svc'
       }
