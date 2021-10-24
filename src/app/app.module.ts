@@ -10,6 +10,7 @@ import { OxygenComponent } from './oxygen/oxygen.component';
 import { NebuliserComponent } from './nebuliser/nebuliser.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent },
